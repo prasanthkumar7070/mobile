@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style type="text/css">
+      .topnav {
+        overflow: hidden;
+        background-color: #1c3597;
+        position: fixed;
+        top: 0;
+        height: 50px;
+        width: 460px;
+        z-index: 1;
+      }
+
+      .topnav a {
+        float: right;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 11px 9px;
+        text-decoration: none;
+        font-size: 23px;
+      }
+
+      .bottom-nav a {
+        float: right;
+        color: #afafaf;
+        text-align: center;
+        padding: 19px 33px 14px;
+        text-decoration: none;
+        font-size: 26px;
+      }
+
+      .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        height: 57px;
+        width: 460px;
+        overflow: hidden;
+        background-color: #ffffff;
+        box-shadow: 0 2px 5px rgba(216, 220, 220, 0.16), 0 2px 11px rgba(185, 183, 183, 0.23);
+      }
+
+      .logo {
+        float: left !important;
+      }
+
+      .logo img {
+        width: 110px;
+        float: left;
+      }
+
+      .app-body {
+        width: 460px;
+        height: 100%;
+        background: #edfaff;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        overflow: auto;
+      }
+
+      .app-subbody {
+        padding: 0px 25px;
+        margin-top: 67px;
+      }
+
+      .mealplan {
+        min-height: 185px;
+        background: white;
+        width: 100%;
+        margin: 20px auto;
+        border-radius: 10px;
+        overflow: hidden;
+        background-image: url(https://www.istudy.org.uk/wp-content/uploads/2017/08/KK1-ADVANCED-DIET-FITNESS-AND-NUTRITION-COURSE.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+
+      .triangle-topleft {
+        width: 0;
+        height: 0;
+        border-top: 100px solid red;
+        border-right: 100px solid transparent;
+      }
+
+      .layer {
+        background: linear-gradient(59deg, rgb(2 0 36 / 52%) 0%, rgb(9 9 121 / 78%) 35%, rgb(6 212 255 / 0%) 100%);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        text-align: left;
+        padding: 22px 0px 0px 27px;
+        font-family: 'Roboto', sans-serif;
+        color: #fff;
+      }
+
+      .training-row {
+        position: relative;
+      }
+
+      .layer h3 {
+        margin-bottom: 0px;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .layer p {
+        margin: 6px 1px 16px 0px;
+        font-size: 15px;
+      }
+
+      .layer button {
+        background: #5b7cf8;
+        padding: 11px 28px;
+        border-radius: 99px;
+        border: 0px;
+        transition: 0.5s;
+        font-size: 14px;
+        color: #fff;
+      }
+
+      .layer button:hover {
+        transition: 0.5s;
+        background: #f5de12;
+      }
+
+      .training-plan {
+        align-items: stretch;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        white-space: nowrap;
+      }
+
+      .training-card-b {
+        height: 120px;
+        width: 156px;
+        background: red;
+        border-radius: 7px;
+        margin-right: 7px;
+        float: left;
+        max-width: 33.333%;
+        padding: 0.75rem;
+        border: 0;
+        flex-basis: 33.333%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        background-position: center;
+      }
+
+      .training-row h3 {
+        font-size: 1.06em;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 10px;
+      }
+
+      .training-row span {
+        position: absolute;
+        right: 0px;
+        top: 4px;
+        border: 0;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+      }
+
+      .training-row span a {
+        text-decoration: none;
+        color: #374c99;
+      }
+
+      .progress-graph img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 90px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app-body">
+      <div class="topnav">
+        <a href="#" class="logo">
+          <img src="https://cdn.dribbble.com/userupload/10933779/file/original-ef5c0b3c6adaa6259ead85d9913115a2.png?resize=1905x411">
+        </a>
+        <a class="active" href="#home">
+          <i class='bx bx-search'></i>
+        </a>
+        <a href="#news">
+          <i class='bx bxs-bell'></i>
+        </a>
+      </div>
+      <div class="app-subbody">
+        <!-- mealplan -->
+        <div class="mealplan">
+          <div class="layer">
+            <h3>Meal Plan</h3>
+            <p>Lorem Ipsum is simply dummy text</p>
+            <button>Click here</button>
+          </div>
+        </div>
+        <!-- mealplan-end -->
+        <!-- training-row -->
+        <div class="training-row">
+          <h3>Training Plan</h3>
+          <span>
+            <a href="#">View all ></a>
+          </span>
+          <div class="training-plan">
+            <div class="training-card-b" style="background-image: url(https://hips.hearstapps.com/hmg-prod/images/muscular-man-training-his-legs-doing-lunges-with-royalty-free-image-1677586874.jpg?crop=0.667xw:1.00xh;0.236xw,0&resize=1200:*);"></div>
+            <div class="training-card-b" style="background-image: url(https://www.eatthis.com/wp-content/uploads/sites/4/2022/11/fitness-man-pushups.jpg?quality=82&strip=1);"></div>
+            <div class="training-card-b" style="background-image: url(https://hips.hearstapps.com/hmg-prod/images/man-exercising-at-home-royalty-free-image-1669761449.jpg);"></div>
+            <div class="training-card-b" style="background-image: url(https://media.istockphoto.com/id/1323833025/photo/mountain-climbers-cardio-exercise.jpg?s=612x612&w=0&k=20&c=35scj7ndz8vQS2FTdZyT0x2IRCKCc6GihEh-2Ln4cfw=);"></div>
+            <div class="training-card-b" style="background-image: url(https://steelsupplements.com/cdn/shop/articles/Bicycle_crunch_-_cover_-_shutterstock_1420680866_1000x.jpg?v=1670162703);"></div>
+          </div>
+        </div>
+        <!-- training-row-end-->
+        <!-- Supplement Routine -->
+        <div class="mealplan" style="background-image:url(https://www.transparentlabs.com/cdn/shop/articles/TL_Blog_Template_4.jpg?v=1663671469)">
+          <div class="layer">
+            <h3>Supplement Routine</h3>
+            <p>Best Pre-Workout Guide</p>
+            <button>Click here</button>
+          </div>
+        </div>
+        <!-- Supplement Routine-end -->
+        <div class="training-row">
+          <h3>Track Progress</h3>
+          <span>
+            <a href="#">View all ></a>
+          </span>
+          <div class="progress-graph">
+            <img src="https://cdn.dribbble.com/userupload/10933611/file/original-5010b92ce8f40d597365a41a19492c7e.jpg?resize=400x322">
+          </div>
+        </div>
+      </div>
+      <div class="bottom-nav">
+        <a class="active" href="#home">
+          <i class='bx bx-menu'></i>
+        </a>
+        <a class="active" href="#home">
+          <i class='bx bxs-user'></i>
+        </a>
+        <a class="active" href="#home">
+          <i class='bx bxs-home' style="color: #1c3597;"></i>
+        </a>
+        <a class="active" href="#home">
+          <i class='bx bx-dumbbell'></i>
+        </a>
+        <a href="#news">
+          <i class='bx bxs-shopping-bag-alt'></i>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
